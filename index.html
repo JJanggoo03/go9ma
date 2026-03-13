@@ -9,7 +9,6 @@
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      overflow: hidden;
       text-align: center;
     }
 
@@ -25,13 +24,12 @@
     }
 
     .content {
-      position: absolute;
-      top: 200px;
-      left: 100vw;
-      width: 100vw;
-      transition: left 0.6s ease;
+      display: none; /* 기본은 숨김 */
+      margin-top: 200px;
     }
-    .content.active { left: 0; }
+    .content.active {
+      display: block; /* 현재 화면만 표시 */
+    }
 
     h1, h2 { margin: 20px 0; }
     .button, .option, .home {
@@ -87,7 +85,7 @@
 </head>
 <body>
   <div class="header">
-    <img src="images/sweetpotato.png" alt="고구마 캐릭터">
+    <img src="고구마.png" alt="고구마 캐릭터">
   </div>
 
   <div class="content active" id="content1">
