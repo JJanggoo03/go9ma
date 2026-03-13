@@ -24,34 +24,34 @@
     }
 
     .content {
-      display: none; /* 기본은 숨김 */
+      display: none;
       margin-top: 200px;
     }
     .content.active {
-      display: block; /* 현재 화면만 표시 */
+      display: block;
     }
 
     h1, h2 { margin: 20px 0; }
     .button, .option, .home {
       display: block;
-      margin: 15px auto;
-      padding: 15px 30px;
+      margin: 20px auto;
+      padding: 20px 40px;
       background-color: #ff9800;
       color: #fff;
-      font-size: 1.2em;
+      font-size: 1.4em;
       font-weight: bold;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 10px;
       cursor: pointer;
       border: none;
-      width: 220px;
+      width: 80%;
     }
     .button:hover, .option:hover, .home:hover { background-color: #e68900; }
 
     .result-box {
       margin: 30px auto;
-      width: 80%;
-      max-width: 400px;
+      width: 90%;
+      max-width: 500px;
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -59,26 +59,26 @@
     .result-top {
       background-color: #8b1c1c;
       color: #fff;
-      padding: 20px;
-      font-size: 1.5em;
+      padding: 25px;
+      font-size: 1.6em;
       font-weight: bold;
     }
     .result-bottom {
       background-color: #ffd861;
       color: #333;
-      padding: 20px;
-      font-size: 1.2em;
+      padding: 25px;
+      font-size: 1.3em;
     }
 
     @media (max-width: 600px) {
-      h1, h2 { font-size: 1.2em; }
+      h1, h2 { font-size: 1.4em; }
       .button, .option, .home {
-        width: 80%;
-        font-size: 1em;
-        padding: 12px 20px;
+        width: 90%;
+        font-size: 1.2em;
+        padding: 18px 30px;
       }
       .header img {
-        width: 100px;
+        width: 120px;
       }
     }
   </style>
