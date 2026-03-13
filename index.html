@@ -12,23 +12,27 @@
       overflow: hidden;
       text-align: center;
     }
+
     .header {
-      position: fixed;
-      top: 20px;
-      left: 0;
       width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
     }
     .header img {
       width: 150px;
+      height: auto;
     }
+
     .content {
       position: absolute;
       top: 200px;
-      left: 100%;
-      width: 100%;
+      left: 100vw;
+      width: 100vw;
       transition: left 0.6s ease;
     }
     .content.active { left: 0; }
+
     h1, h2 { margin: 20px 0; }
     .button, .option, .home {
       display: block;
@@ -45,6 +49,7 @@
       width: 220px;
     }
     .button:hover, .option:hover, .home:hover { background-color: #e68900; }
+
     .result-box {
       margin: 30px auto;
       width: 80%;
@@ -66,11 +71,23 @@
       padding: 20px;
       font-size: 1.2em;
     }
+
+    @media (max-width: 600px) {
+      h1, h2 { font-size: 1.2em; }
+      .button, .option, .home {
+        width: 80%;
+        font-size: 1em;
+        padding: 12px 20px;
+      }
+      .header img {
+        width: 100px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="header">
-    <img src="고구마.png" alt="고구마 캐릭터">
+    <img src="images/sweetpotato.png" alt="고구마 캐릭터">
   </div>
 
   <div class="content active" id="content1">
